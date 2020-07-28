@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="full-body">
+        <div class="input-output mb-2">
+            <input id="input" type="text" placeholder="input">
+            <br>
+            <input id="output" type="text" placeholder="output">
+        </div>
+        <div class="row">
+            <button id="one" value="1" class="num">1</button>
+            <button id="two" value="2" class="num">2</button>
+            <button id="three" value="3" class="num">3</button>
+            <button id="plus">+</button>
+        </div>
+        <div class="row">
+            <button id="four" value="4" class="num">4</button>
+            <button id="five" value="5" class="num">5</button>
+            <button id="six" value="6" class="num">6</button>
+            <button id="minus">-</button>
+        </div>
+        <div class="row">
+            <button value="7" id="seven" class="num">7</button>
+            <button value="8" id="eight" class="num">8</button>
+            <button value="9" id="nine" class="num">9</button>
+            <button id="product">X</button>
+        </div>
+        <div class="row">
+            <button value="0" id="zero">0</button>
+            <button value="00" id="double-zero">.</button>
+            <button id="division">/</button>
+            <button id="clear">c</button>
+        </div>
+        <button id="equal" style="width:220px;">=</button>
+    </div>
+
+
+    <script>
+const oneBtn = document.getElementById("one")
+oneBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "1";
+});
+const twoBtn = document.getElementById("two")
+twoBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "2";
+})
+const threeBtn = document.getElementById("three")
+threeBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "3";
+})
+const fourBtn = document.getElementById("four")
+fourBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "4";
+})
+const fiveBtn = document.getElementById("five")
+fiveBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "5";
+})
+const sixBtn = document.getElementById("six");
+sixBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "6";
+})
+const sevenBtn = document.getElementById("seven")
+sevenBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "7";
+})
+const eightBtn = document.getElementById("eight")
+eightBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "8";
+})
+const nineBtn = document.getElementById("nine")
+nineBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "9";
+})
+const zeroBtn = document.getElementById("zero")
+zeroBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "0";
+})
+const doubleZeroBtn = document.getElementById("double-zero")
+doubleZeroBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += ".";
+})
+const plusBtn = document.getElementById("plus")
+plusBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "+";
+})
+const minusBtn = document.getElementById("minus")
+minusBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "-";
+})
+const productBtn = document.getElementById("product")
+productBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "*";
+})
+const divisionBtn = document.getElementById("division")
+divisionBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value += "/";
+})
+const cBtn = document.getElementById("clear")
+cBtn.addEventListener("click", function(){
+    const getInput = document.getElementById("input").value = " ";
+    const getOutPut = document.getElementById("output").value = " ";
+})
+const eqaulBtn = document.getElementById("equal")
+eqaulBtn.addEventListener("click", function(){
+    const getOutPut = document.getElementById("output").value = eval(document.getElementById("input").value);
+    const getInput = document.getElementById("input").value = " ";
+})
+    </script>
+</body>
+</html>
